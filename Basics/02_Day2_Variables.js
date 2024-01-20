@@ -16,7 +16,7 @@ let accountState; //value here is undefined
  BTW this a multi-line comment and one with double slash is single line comment
 */
 
-console.table([accountId, accountName, accountPassword, accountCity, accountState]);
+console.table([accountId, accountName, accountPassword, accountCity, accountState]); //display data in tabular form
 
 
 /*
