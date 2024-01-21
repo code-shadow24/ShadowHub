@@ -34,3 +34,5 @@ console.log(nickName.includes('i'))//to check if the provided character or value
 
 const favGames = "PUBG-Minecraft-Traffic Rider-Call Of Duty-Granny"
 console.log(favGames.split('-'))//will split the string and form an array by separating every word after the provided separator
+
+//Read MDN docs for more string methods
