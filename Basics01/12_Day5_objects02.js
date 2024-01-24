@@ -44,3 +44,38 @@ console.log(Object.values(user1))//this will give the values of the object in an
 console.log(Object.entries(user1))//this will give the key value pair of the object each in a separate array enclosed in a final array form
 
 console.log(user1.hasOwnProperty('firstname'))// to check if the key is present in the object or not
+
+
+//object destructurig
+
+const supervillans= {
+    marvel:"thanos",
+    starwars: "darth vader",
+    harrypotter: "voldermort"
+
+}
+
+//in case you want to access any value many times suppose we want to print villan of marvel five times, writing supervillans.marvel five times will not look very clean. Instead use this
+
+const {marvel} = supervillans
+
+console.log(marvel)
+
+//if we want we can also assign a different name to the key also
+
+const {marvel : marv} = supervillans
+
+console.log(marv)
+
+//Intro to API and JSON
+
+/*{
+    "marvel":"thanos",
+    "starwars": "darth vader",
+    "harrypotter": "voldermort"
+
+}*/ //syntax of a json
+
+//We get APIs usually in object format but sometimes we can also get arrays in the API
+
+//To access the value in APIs we usually use object or array methods. Note: can try randomuser.me to practice API methods and to understad and simplify it we can use JSON formatter
