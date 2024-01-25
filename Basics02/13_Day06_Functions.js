@@ -49,3 +49,48 @@ function greet(name="Sammy"){
     return finalGreet;
 }
 */
+
+//In case the number of arguemets that will be passed is not certain or fixed like in shopping cart
+
+// function cartPrice(...num1){
+//     return num1
+// }// the ...operator is known as rest operator to convert all the arguements into an array. Now we can apply for loop to calculate the price
+
+function cartPrice(val1, val2, ...num1){
+    return num1
+}// in case we pass other parameters too so the one value per paramter will be assigned first and the rest will be converted to the array
+
+ console.log(cartPrice(300, 1320, 572, 890, 120))
+
+ //we can also handle objects and arrays in functions
+
+ const product1 = {
+    productname: "XYZ Chocolate",
+    price: 130,
+    weight: "120g"
+ }
+
+function cartDetail(anyobject){
+    console.log(`You selected ${anyobject.productname} of weight ${anyobject.weight}. Please pay Rs. ${anyobject.price} to complete the purchase`)
+}
+//anyobject is a paramter to accept function without passing the actual function name in parameters
+
+cartDetail(product1)
+
+const scores = [20, 40, 23, 450]
+
+function scoreDetail(getArray){
+    return getArray[2]
+}
+
+console.log(scoreDetail(scores))
+
+//We can also directly pass the array or the object while passing the arguements
+
+cartDetail({
+    productname: "ABC Sweets",
+    price: 50,
+    weight: "25 grams"
+})
+
+console.log(scoreDetail([30, 45, 12, 56]))
