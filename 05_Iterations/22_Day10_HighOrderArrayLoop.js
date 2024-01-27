@@ -48,12 +48,52 @@ for(const key in myObject){
 }
 
 for(const hero in Avengers){
-    console.log(Avengers[hero])
+    //console.log(Avengers[hero])
 }
 
 //for of loop will print the values but for in loop will print the keys
 
 for(const key in map){
-    console.log(key)
+    //console.log(key)
 }//map is ot interable with for in loop
 
+//for each loop
+
+Avengers.forEach( (i)=>{
+    //console.log(i)
+} )
+
+function printone(a){
+    //console.log(a)
+}
+
+Avengers.forEach(printone)//only provide reference
+
+printtwo = (b) => {
+    //console.log(b)
+}
+
+Avengers.forEach(printtwo)
+
+Avengers.forEach((a, index, arr)=>{
+    //console.log(a, index, arr)
+})
+
+const programming = [
+    {
+        languageName: "Javasript",
+        languageExtension: "js"
+    },
+    {
+        languageName: "Python",
+        languageExtension: "py"
+    },
+    {
+        languageName: "C++",
+        languageExtension: "cpp"
+    }
+]
+
+programming.forEach((val)=>{
+   console.log(val.languageName)
+})
