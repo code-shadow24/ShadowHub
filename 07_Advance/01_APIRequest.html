@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color: #212121;">
+    
+</body>
+<script>
+    const requestURL = 'https://randomuser.me/api/'
+    const xrt = new XMLHttpRequest()
+    xrt.open('GET', requestURL)
+    xrt.onreadystatechange = ()=>{
+        console.log(xrt.readyState)
+        if(xrt.readyState===4){
+            console.log(this.responseText)
+        }
+    }
+    xrt.send()
+
+    //Most of the time the response received is in string format. To convert this string into an JSON object you can use JSON.parse() method
+</script>
+</html>
